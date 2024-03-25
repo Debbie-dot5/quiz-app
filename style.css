@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #22223b;
+}
+
+.welcome{
+    color: white;
+    animation: bounce 1s ease-in-out infinite alternate;
+    animation-delay: 2s;
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+
+.container{
+ width: 100%;
+ margin: 100px auto 0;
+ max-width: 600px;
+ background-color: #ffff; 
+ border-radius: 10px;
+ padding: 30px;
+}
+
+input[type="radio"] {
+  cursor: pointer; 
+}
+
+
+.answers{
+    margin-top: 10px;
+}
+.ans{
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.submit{
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: 600;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    display: flex;
+   justify-content: center;
+    cursor: pointer;
+}
+
+.contents{
+  padding: 30px;
+}
+
+.start{
+    text-align: center;
+    margin-top: 250px;
+    
+}
+
+.start-quiz{
+    background-color: rebeccapurple;
+    color: #ffff;
+   font-size: 24px;
+   padding: 15px 18px;
+   border-radius: 8px;
+   border: none;
+   margin-top: 10px; 
+   cursor: pointer;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-quiz:hover{
+    background-color: lightgray;
+    color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hide{
+    display: none;
+}
+
+
+.results{
+  text-align: center;
+  padding: 32px;
+}
+
+.results h3{
+   padding: 10px 0;  
+}
+
+.correct{
+    color: green;
+}
+
+.wrong{
+    color: red;
+}
+
+.score{
+    color: gray;
+}
+
+.play-again{
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: 600;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+    .container{
+        max-width: 350px;
+        padding: 20px 10px;
+       }
+
+       .question{
+        font-size: 25px;
+       }
+}
